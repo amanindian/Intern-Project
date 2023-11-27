@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Clause</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e1b2553395.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul id="fixmenu">
+          <li><a href="#" class="logo">Code Clause </a></li>
+          <i class="fa-solid fa-bars open-icon" onclick="opens()"></i>
+        </ul>
+        <ul id="sidemenu">
+          <li><a href="#Home" onclick="clos()">Home</a></li>
+          <li><a href="#Certificate" onclick="clos()">Certificate</a></li>
+          <li><a href="#About" onclick="clos()">About Us</a></li>
+          <li><a href="#Services" onclick="clos()">Services</a></li>
+          <li><a href="#Courses" onclick="clos()">Courses</a></li>
+          <li><a href="#Contact" onclick="clos()">Contact</a></li>
+          <i class="fa-solid fa-xmark close-icon" onclick="clos()"></i>
+        </ul>
+      </nav>
+      <section id="home" class="section">
+        <h1>Welcome to Code Clause</h1>
+        <p>Your gateway to IT solutions and training</p>
+        <a href="#Contact" id="get-in-toch"> Get In Toch</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="Certificate" class="section">
+        <div>
+          <h1>Certificate Verification</h1>
+          <form class="Certificate-form">
+            <label for="Certificate-id">Certificate ID:</label>
+            <input
+              type="text"
+              id="Certificate-id"
+              placeholder="Enter Your Certificate I'D"
+            />
+            <button value="submit">Verify</button>
+          </form>
+
+          <div class="Certificate-Details">
+            <h2>Certificate Details</h2>
+            <ul>
+              <li>Name:</li>
+              <li>Certificate ID:</li>
+              <li>Date of Issue:</li>
+              <li>Course/Internship in:</li>
+            </ul>
+          </div>
+
+          <div class="Certificate-Buttons">
+            <button>Join Internship</button>
+            <button>Login Course</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="About" class="section">
+        <h1>About Us</h1>
+        <ul>
+          <h3>
+            Welcome to Code Clause, a leading provider of IT solutions and
+            training.
+          </h3>
+          <li>
+            Specializing in web development, digital marketing, mobile app
+            development, SEO, and graphic designing
+          </li>
+          <li>
+            Committed to delivering tailored solutions to meet client needs
+          </li>
+          <li>Offering comprehensive computer courses and training programs</li>
+          <li>
+            From basic to advanced levels, empowering students in their IT
+            careers
+          </li>
+          <li>Focus on quality, innovation, and customer satisfaction</li>
+          <li>Your one-stop destination for all IT needs</li>
+        </ul>
+      </section>
+
+      <section id="Services" class="section">
+        <h1>Our Services</h1>
+        <div class="boxes">
+          <div class="box">
+            <h2>Web Development</h2>
+            <p>
+              We provide customized web development solutions tailored to your
+              business requirements. Our expert developers utilize the latest
+              technologies to create visually appealing and user-friendly
+              websites.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Digital Marketing</h2>
+            <p>
+              Our digital marketing services help businesses reach their target
+              audience and boost their online presence. We employ strategic
+              techniques such as SEO, social media marketing, and content
+              marketing to drive growth and maximize ROI.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Mobile App Development</h2>
+            <p>
+              We specialize in developing innovative and intuitive mobile
+              applications for iOS and Android platforms. Our experienced app
+              developers ensure seamless functionality and captivating user
+              experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Courses" class="section">
+        <h1>Our Courses</h1>
+        <div class="boxes">
+          <div class="box">
+            <h2>Basic IT Course</h2>
+            <p>
+              Our Basic IT Course is designed to provide a solid foundation in
+              information technology. It covers essential concepts, hardware and
+              software basics, and computer literacy skills.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Web Development Course</h2>
+            <p>
+              Our Web Development Course equips students with the necessary
+              skills to design and build professional websites. It covers HTML,
+              CSS, JavaScript, and popular web frameworks.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Digital Marketing Course</h2>
+            <p>
+              Our Digital Marketing Course explores various marketing strategies
+              and techniques in the digital realm. It covers SEO, social media
+              marketing, email marketing, and analytics.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Testimonial" class="section">
+        <h1>Testimonials</h1>
+        <div class="Testimonials">
+          <div class="Testimonial">
+            <p>
+              "I can confidently say that my internship experience with Code
+              Clause was a game-changer. Not only did I acquire valuable
+              practical skills, but it also significantly contributed to my
+              academic performance. Thanks to them, I excelled in my semester
+              internship and gained a deeper understanding of the industry."
+            </p>
+            <p class="Testimonial-author">- Suhani Priya, IT Student</p>
+          </div>
+          <div class="Testimonial">
+            <p>
+              "Code Clause has been instrumental in shaping my career. The
+              skills I gained through their courses and training programs have
+              opened up numerous job opportunities for me. I am truly grateful
+              for their guidance and expertise."
+            </p>
+            <p class="Testimonial-author">- Diwakar Sinha, Web Developer</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Contact" class="section">
+        <h1>Contact Us</h1>
+        <div class="Contact-Description">
+          Ready to start your project or have a question? Get in touch with us!
+        </div>
+
+        <div class="Contact-Information">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>Sub Office: Code Clause</li>
+            <li>Sinha Complex, Daladili Chowk, Ranchi</li>
+            <li>Ring Road, Ranchi, JH – 835222</li>
+            <li>Whatsapp: +91 910000001</li>
+            <li>Email: codeclause@gmail.com</li>
+          </ul>
+        </div>
+
+        <form class="Contact-Form">
+          <h2>Send us a Message</h2>
+          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            name="Description"
+            id="Description"
+            placeholder="Your Message"
+          ></textarea>
+          <button class="Contact-Button">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">© 2023 Code Clause. All rights reserved.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

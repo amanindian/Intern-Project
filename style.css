@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for Each Section */
+.section {
+  padding: 50px 110px;
+  color: #fff;
+}
+
+.section h1 {
+  font-family: cursive;
+  line-height: 100px;
+  color: var(--main);
+}
+
+:root {
+  --main: #9dff7f;
+  --box-bg: #222;
+  --main2: rgb(36, 159, 2);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.fa-solid {
+  display: none !important;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: cursive;
+  z-index: 50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main);
+}
+
+#sidemenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#sidemenu li {
+  padding: 15px;
+  font-size: 20px;
+  font-family: monospace;
+}
+.navbar ul li a {
+  color: rgb(0, 0, 0);
+}
+
+.navbar ul li :hover,
+.open-icon:hover,
+.close-icon :hover {
+  color: blue;
+  text-shadow: 1px 1px rgb(187, 0, 255);
+}
+
+/* Style for Header */
+header {
+  max-width: 100%;
+}
+
+/* Style for home section */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblueF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--main);
+}
+
+#home ::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(head\ bg.jpg) no-repeat center center/cover;
+  opacity: 0.8;
+  z-index: -5;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#home p {
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 0;
+}
+
+#get-in-toch {
+  background-color: var(--main);
+  border: 1px solid white;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#get-in-toch:hover {
+  background-color: var(--main2);
+  color: rgb(255, 255, 255);
+}
+
+/*  Style for Certificate section*/
+#Certificate {
+  background-color: rgb(43 43 47);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.Certificate-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Certificate-form label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
+}
+.Certificate-form input {
+  font-size: 20px;
+  padding: 8px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgb(63, 212, 17);
+}
+
+.Certificate-form button {
+  background-color: var(--main);
+  border: 2px solid white;
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.Certificate-form button:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.Certificate-Details {
+  background-color: aliceblue;
+  color: black;
+  border: 2px solid var(--main2);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+.Certificate-Details h2 {
+  color: var(--main2);
+  margin: 5px 0;
+}
+
+.Certificate-Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.Certificate-Buttons button {
+  background-color: var(--main);
+  border: 1px solid white;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.Certificate-Buttons button:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+/* About */
+#About {
+  background-color: var(--box-bg);
+  color: #fff;
+}
+
+#About h3 {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: monospace;
+}
+#About ul li {
+  margin-left: 30px;
+  line-height: 30px;
+  list-style: disc;
+  font-family: system-ui;
+}
+
+/* Services and Courses  */
+#Services {
+  color: var(--main);
+  padding: 50px 100px;
+  background-color: #171717;
+}
+
+.boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: var(--box-bg);
+  width: 400px;
+  min-height: 200px;
+  padding: 30px;
+  border-radius: 5px;
+  font-family: "Segoe UI";
+  margin: 15px;
+  border: 1px solid white;
+  color: #fff;
+  transition: all 1s;
+}
+
+.box:hover {
+  background-color: #000;
+  color: var(--main);
+  transform: scale(1.02);
+}
+
+.box h2 {
+  line-height: 40px;
+  font-family: math;
+}
+
+#Courses {
+  background-color: #121212;
+}
+
+/* Testimonials */
+#Testimonial {
+  background-color: #0d0d0d;
+}
+.Testimonials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.Testimonial {
+  background-color: var(--box-bg);
+  /* width: 100%; */
+  padding: 30px;
+  border-radius: 5px;
+  font-family: "Segoe UI";
+  margin: 15px;
+  border: 1px solid white;
+  color: #fff;
+  transition: all 1s;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.Testimonial-author {
+  color: var(--main);
+  font-style: normal;
+  line-height: 2;
+}
+.Testimonial:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+.Testimonial:hover > .Testimonial-author {
+  color: var(--main);
+}
+/* Contact */
+#Contact {
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Contact-Description {
+  background-color: var(--box-bg);
+  border-radius: 10px;
+  width: 100%;
+  padding: 40px 60px;
+  text-align: center;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  color: var(--main);
+  margin: 20px 0px;
+}
+
+.Contact-Information {
+  min-width: 48%;
+  background-color: var(--box-bg);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 40px 60px;
+  font-size: 20px;
+  color: var(--main);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Contact-Information h2,
+.Contact-Form h2 {
+  line-height: 1.7;
+  font-family: cursive;
+  font-style: italic;
+  color: var(--main);
+}
+
+.Contact-Form {
+  min-width: 48%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-bg);
+  border-radius: 10px;
+  padding: 40px 60px;
+  font-size: 20px;
+  margin: 10px;
+}
+.Contact-Form input,
+.Contact-Form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  resize: vertical;
+}
+
+.Contact-Button {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: var(--main);
+  cursor: pointer;
+  border: 1px solid var(--main);
+  border-radius: 5px;
+}
+
+.Contact-Button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.bg-tran {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width:900px) {
+  .navbar {
+    width: 100vw;
+    flex-direction: column;
+  }
+  #fixmenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: flex-start;
+  }
+  #sidemenu {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--main);
+    opacity: 1;
+    z-index: 100;
+    right: 100%;
+    transition: all 1s;
+  }
+  .open-icon,
+  .close-icon {
+    display: inline !important;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .section h1 {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 10px !important;
+  }
+  .box {
+    padding: 15px;
+  }
+
+  .Testimonial {
+    font-size: 15px;
+  }
+
+  .Contact-Information,
+  .Contact-Form,
+  .Contact-Description {
+    width: 100%;
+    padding: 15px;
+  }
+}
